@@ -515,3 +515,11 @@ Afficher les logs.
 Vérifier l'état du repertoire courant.
 
 ## Notes de fin
+
+Cet exercice est un bon début pour commencer à utiliser Git certes mais il vous faut maintenir le rythme en enchainant l'utilisation de ces notions dans vos projets personnels.
+
+Et rétenez une chose, c'est en forgeant que l'on devient forgeron. Prenez les bonnes habitudes très vite dans vos projets et cela vous évitera de revenir en arrière très souvent.
+
+---
+
+<small><a href="mailto:moustaphaotf@gmail.com">Mamadou Moustapha Diallo</a>, Lead <a href="https://gdsc.community.dev/institut-superieur-de-technologie-de-mamou/">GDSC IST Mamou</a> - MARS 2024</small>
