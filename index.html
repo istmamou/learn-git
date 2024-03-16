@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="node_modules/reveal.js/dist/reset.css">
+		<link rel="stylesheet" href="node_modules/reveal.js/dist/reveal.css">
+		<link rel="stylesheet" href="node_modules/reveal.js/dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="node_modules/reveal.js/plugin/highlight/monokai.css">
+
+		<style>
+			pre {
+				display: inline !important;
+				white-space: pre-wrap !important;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+					<textarea data-template>
+						# Learn Git & GitHub
+						and learn it well
+
+						---
+
+						## Club GDSC
+
+						---
+						
+						## Qui suis-je ?
+	
+						Mamadou Moustapha Diallo
+	
+						* GDSC Lead
+						* L4 Génie Informatique
+						* Dévéloppement Web
+						* Cyber Sécurité, Cloud & IA
+	
+						---
+						
+						# SETUP
+
+						Installation des outils nécessaires
+
+						---
+						## Motivation & Attentes
+	
+						Dites-nous ce que vous attendez de ce workshop.
+	
+						---
+						# Introduction
+
+						---
+						## Problématique
+
+						* Entretien surprise (... où est mon portfolio) <!-- .element: class="fragment highlight-current-blue" -->
+						* Les projets de groupe (... la conformité) <!-- .element: class="fragment highlight-current-blue" -->
+						* Organisation (... messy desk) <!-- .element: class="fragment highlight-current-blue" -->
+						* Je veut voir ton code source <!-- .element: class="fragment highlight-current-blue" -->
+
+
+						---
+						## Solutions
+
+						Git & GitHub
+
+						---
+						# GitHub
+
+						> Un site web et un service de cloud qui aide les développeurs à stocker et à gérer leur code, ainsi qu’à suivre et contrôler les modifications qui lui sont apportées.
+
+						<a href="https://kinsta.com/fr/base-de-connaissances/base-de-connaissances-github/" style="font-size: x-small;">https://kinsta.com/fr/base-de-connaissances/base-de-connaissances-github/</a>
+						
+						---
+						## Controle de version
+
+						> Le contrôle de version aide les développeurs à suivre et à gérer les modifications apportées au code d'un projet logiciel.
+						---
+
+						## Git
+
+						> Git est un logiciel de gestion de versions décentralisé. C'est un logiciel libre et gratuit, créé en 2005 par Linus Torvalds, auteur du noyau Linux.
+
+						<a href="https://fr.wikipedia.org/wiki/Git" style="font-size: x-small;">https://fr.wikipedia.org/wiki/Git</a>
+
+						---
+						## Git
+
+						<pre class="mermaid">
+							---
+							title: Diagram
+							---
+							gitGraph
+								commit
+								commit
+								branch develop
+								checkout develop
+								commit
+								commit
+								checkout main
+								merge develop
+								commit
+								commit
+						</pre>
+
+						
+						---
+						## Git
+
+						<pre class="mermaid">
+							---
+							title: Diagram
+							---
+							gitGraph
+								commit
+								branch feat1
+								checkout feat1
+								commit
+								checkout main
+								merge feat1
+						</pre>
+					
+						---
+						## Git
+
+						<pre class="mermaid">
+							---
+							title: Diagram
+							---
+							gitGraph
+								commit
+								commit
+								branch feat1
+								checkout feat1
+								commit
+								commit
+								checkout main
+								branch feat2
+								checkout feat2
+								commit
+								commit
+								commit
+								checkout main
+								merge feat1
+								checkout feat2
+								commit
+								checkout main
+								merge feat2
+						</pre>
+
+						---
+						# TP
+						Construire une référence SQL
+						
+						|||||
+						|-|-|-|-|
+						|DATABASE|`create`, `drop`, `rename`|
+						|TABLE|`create`, `drop`, `rename`|
+						|ROW|`create`, `insert`, `update`, `delete`|
+						|COLUMN|`create`, `rename`, `drop`|
+						---
+						# TP
+						Construire une référence SQL
+						
+						```js
+						{
+							"database": {},
+							"table": {},
+							"row": {},
+							"column": {}
+						}
+						``` 
+
+						---
+						# En conclusion
+
+						---
+						## Opensource
+
+						- MLH Fellowship
+						- Outreachy Program
+						- Hacktoberfest
+						
+						---
+						## Résumé foireux
+
+						```powershell
+						git init
+						git add
+						git commit
+						git push
+						```
+					</textarea>
+				</section>
+			</div>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.0/dist/mermaid.min.js"></script>
+		<script src="node_modules/reveal.js/dist/reveal.js"></script>
+		<script src="node_modules/reveal.js/plugin/notes/notes.js"></script>
+		<script src="node_modules/reveal.js/plugin/markdown/markdown.js"></script>
+		<script src="node_modules/reveal.js/plugin/highlight/highlight.js"></script>
+		<script>
+			Reveal.initialize({
+				hash: true,
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>

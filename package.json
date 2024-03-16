@@ -1,0 +1,15 @@
+{
+  "name": "learn-git",
+  "version": "1.0.0",
+  "description": "* Git est un outil opensource.\r * Git est un système de versioning\r * Git est une référence dans le domaine\r * Git, c'est la vie !",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "reveal.js": "^5.0.5"
+  }
+}
