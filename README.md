@@ -172,7 +172,7 @@ touch sql_reference.json
 
 Dans ce fichier nous allons ajouter les lignes suivantes:
 
-```json
+```js
 {
     "database": {
         "create": "CREATE DATABASE database_name;"
@@ -260,7 +260,7 @@ Ajoutons ensuite une entrée `drop` dans la partie database qui donne la command
 
 Au final, nous devrions avoir un contenu identique que ce qui suit:
 
-```json
+```js
 {
     "database": {
         "create": "CREATE DATABASE database_name;",
@@ -319,7 +319,7 @@ git checkout -b feat/ajout-references-table
 
 Rajoutons dans notre référence une entrée sur `table` contenant deux sous-entrées (`create` et `drop`)
 
-```json
+```js
 {
     "database": {
         // ... ancien contenu
@@ -364,7 +364,7 @@ Créez une branche `feat/ajout-reference-insertion-ligne`
 
 Ajoutez une entrée `row` dans le fichier de référence contenant une sous-entrée `insert` pour insérer une entrée dans une table:
 
-```json
+```js
 {
     "database" : { 
         // ... ancien contenu
@@ -388,7 +388,7 @@ Dans cette branche, nous allons gérer les commandes en lien aux colonnes.
 
 Commençons par ajouter une entrée `column` dans le fichier de référence contenant une sous-entrée `create` contenant la requête SQL pour créer une colonne dans une table `ALTER TABLE table_name ADD COLUMN column_name;`.
 
-```json
+```js
 {
     "database" : { 
         // ... ancien contenu
@@ -437,7 +437,7 @@ Nous allons ensuite ajouter une sous-entrée `rename` sur la branche courante `f
 
 Voici à quoi devrait ressembler l'entrée `column`:
 
-```json
+```js
 {
     // ... ancien contenu
     "column": {
@@ -459,7 +459,7 @@ Dans la branche `feat/ajout-references-colonne`, on fait un **rebase**.
 
 Positionnez-vous sur la branche main puis créez une branche `fix/ajout-references-rename-manquantes` où nous allons ajouter les sous-entrées `rename` de `database` et `table`:
 
-```json
+```js
 {
     "database": {
         // ... ancien contenu
@@ -483,7 +483,7 @@ Finalement, dans la branche `feat/ajout-references-colonne` on fait de nouveau u
 
 Une nouvelle branche `fix/ajout-references-lignes-manquantes` où il sera ajouté à `row` les sous-entrées `update`, `select`, `delete` dont les valeurs sont les requêtes SQL pour effectuer les actions correspondantes. Vous devriez avoir un contenu pareil:
 
-```json
+```js
 {
     "row": {
         // ... ancien contenu
