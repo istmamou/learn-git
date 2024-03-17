@@ -1,5 +1,8 @@
 # Apprendre Git en créant un objet de référence SQL
 
+
+| [Téléchargez le powerpoint](/learn-git-powerpoint.pdf) | [Téléchargez le TP](/learn-git-tp.pdf) |
+
 ## Qu'est-ce que c'est Git ?
 * Git est un outil opensource.
 * Git est un système de versioning
